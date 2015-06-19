@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Predicting Sexe</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<meta name="description" content="Predicting Sexe">
+	<meta name="author" content="Laury">
+	<meta name="generator" content="slidify" />
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/shower/themes/ribbon/styles/screen.css">
+	<link rel="stylesheet" media="print"
+	  href="libraries/frameworks/shower/themes/ribbon/styles/print.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css">  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+	<!--
+		To apply styles to the certain slides
+		use slide ID to get needed elements
+		-->
+	<style>
+		#Cover h2 {
+      margin:65px 0 0;
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+			}
+		#FitToWidth h2,
+		#FitToHeight h2 {
+			color:#FFF;
+			text-align:center;
+			}
+	</style> 
+</head>
+<body class="list">
+  <header class="caption">
+  	<h1>Predicting Sexe</h1>
+	</header>
+  <section class="slide " id="slide-1">
+  <div>
+    <h2>Trash in, Trash out</h2>
+    <p>The first goal of this app is to show it can be very important to preproces your data.If you use the PCA analyses and thereby reducing the redundant information, the algorithm can predict sexe.  </p>
+
+  </div>
+</section>
+<section class="slide " id="slide-2">
+  <div>
+    <h2>How to interpret the prediction model?</h2>
+    <p>-It is always hard to interpret a prediction model.  But you can try to interpret by looking and the variables that are most important. The top 5 important variables are given in the output to plot.</p>
+
+<p>-It gets even more difficult to interpret if the variables are actually components of the principal component analysis. If the PCA is run, the output gives back the 5 most important variables of the 5 most important component.</p>
+
+  </div>
+</section>
+<section class="slide " id="slide-3">
+  <div>
+    <h2>The user can begin to explore these variables.</h2>
+    <p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </div>
+</section>
+<section class="slide " id="slide-4">
+  <div>
+    <h2>But as you can see, it is hard to seperate males an females</h2>
+    <p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </div>
+</section>
+<section class="slide " id="slide-5">
+  <div>
+    <h2>Some remarks.</h2>
+    <p>-Very few data is used here. Therefore these predictions are very influenced by what sample it chosen for test and training set, this is seen by changing the random seeds.</p>
+
+<p>-For a good prediction more samples are needed and cross validation is needed. But due to the lack of more data and the computational constrains of the app, this is not possible.</p>
+
+<p>-Furthermore the main goal of the app is to show that pre-processing can make a difference and that interpretation is hard.</p>
+
+  </div>
+</section>
+  <div class="progress">
+    <div></div>
+  </div>
+	<script src="libraries/frameworks/shower/shower.js"></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+		<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+	<!-- Photos by John Carey — fiftyfootshadows.net -->
+</body>
+</html>
